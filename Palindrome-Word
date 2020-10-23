@@ -1,0 +1,37 @@
+package recursionclass;
+
+public class palindromeword {
+
+	public static boolean boolean1(String s) {
+		
+	return	boolean1(s,0,s.length()-1);
+	}
+	
+	public static boolean boolean1(String s,int start, int end) {
+	//	boolean ans =false;
+		//char ch;
+	    char ch = s.charAt(start);
+		char ch1 = s.charAt(end);
+		if(start == end) {
+			return true;
+		}
+		if(s.length() == 0 || s.length() == 1) {
+			return true;
+		}
+		
+		else if(ch != ch1) {
+			return false;
+		}
+		return true;
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s ="al";
+		System.out.println(boolean1(s));
+
+	}
+
+}
