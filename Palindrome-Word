@@ -22,6 +22,9 @@ public class palindromeword {
 		else if(ch != ch1) {
 			return false;
 		}
+		else if(start < end+1) {
+		return	boolean1(s,start+1, end-1);
+		}
 		return true;
 		
 	}
