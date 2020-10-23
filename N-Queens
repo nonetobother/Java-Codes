@@ -62,6 +62,17 @@ public class NQueens {
 			}
 		}
 		
+		for(int i=row-1; i>=0; i--) {
+			if(billboard[i][col] == 1) {
+				return false;
+			}
+		}
+		
+		for(int i=row+1; i<n; i++) {
+			if(billboard[i][col] == 1) {
+				return false;
+			}
+		}
 		
 		return true;
 	}
